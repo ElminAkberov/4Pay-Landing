@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { NavLink } from "react-router-dom";
 
 const ContactUs = () => {
   const { t } = useTranslation();
@@ -14,8 +15,8 @@ const ContactUs = () => {
           {t("contactUs.description")}
         </p>
       </div>
-      {/* <div className="max-w-4xl mx-auto mt-5">
-        <div className="mb-5">
+      <div className="max-w-4xl mx-auto mt-5">
+        {/* <div className="mb-5">
           <label className="text-[12px]" htmlFor="name">
             {t("contactUs.nameLabel")}
           </label>
@@ -44,16 +45,18 @@ const ContactUs = () => {
               (e.target.value = e.target.value.replace(/[^0-9+()]/g, ""))
             }
           />
-        </div>
+        </div> */}
         <div className="flex justify-center">
-          <button
-            type="submit"
-            className="w-fit min-w-[300px] max-md:min-w-[150px] bg-[#683DE5] p-4 px-5 font-semibold rounded-full text-[14px] cursor-pointer mt-20"
-          >
-            {t("contactUs.submitButton")}
-          </button>
+          <NavLink target="_blank" to={"https://t.me/q_fourpay"}>
+            <button
+              type="submit"
+              className="w-fit min-w-[300px] max-md:min-w-[150px] bg-[#683DE5] p-4 px-5 font-semibold rounded-full text-[14px] cursor-pointer mt-20"
+            >
+              {t("contactUs.submitButton")}
+            </button>
+          </NavLink>
         </div>
-      </div> */}
+      </div>
     </form>
   );
 };
