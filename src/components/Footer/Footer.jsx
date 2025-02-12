@@ -19,12 +19,12 @@ const Footer = () => {
             <p className="max-md:text-[14px] py-4 md:pr-[150px]">
               {t("footer.description")}
             </p>
-            <div className="flex gap-x-4">
+            {/* <div className="flex gap-x-4">
               <img src="/assets/icons/insta.svg" alt="Instagram" />
               <img src="/assets/icons/face.svg" alt="Facebook" />
               <img src="/assets/icons/yt.svg" alt="YouTube" />
               <img src="/assets/icons/X.svg" alt="X (formerly Twitter)" />
-            </div>
+            </div> */}
           </div>
           <div className="">
             <h3 className="text-white text-[20px]">{t("footer.navigation")}</h3>
@@ -45,7 +45,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="">
-            <h3 className="text-white text-[20px]">{t("footer.resources")}</h3>
+            {/* <h3 className="text-white text-[20px]">{t("footer.resources")}</h3>
             <div className="py-3">
               <NavLink>{t("footer.apiDocs")}</NavLink>
             </div>
@@ -54,7 +54,7 @@ const Footer = () => {
             </div>
             <div className="py-3">
               <NavLink>{t("footer.requirements")}</NavLink>
-            </div>
+            </div> */}
             <select
               className="bg-[#0B1113] w-[250px] max-md:w-[150px] p-3 rounded-xl outline-none"
               name="lang"

@@ -54,9 +54,11 @@ export default function Example() {
           </a>
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <button className="w-fit bg-[#72E484] p-2 px-3 font-semibold rounded-full text-sm cursor-pointer">
-            {t("header.contactUs")}
-          </button>
+          <NavLink target="_blank" to={"https://t.me/q_fourpay"}>
+            <button className="w-fit bg-[#72E484] p-2 px-3 font-semibold rounded-full text-sm cursor-pointer">
+              {t("header.contactUs")}
+            </button>
+          </NavLink>
         </div>
       </nav>
 
@@ -114,9 +116,11 @@ export default function Example() {
                 </a>
               </div>
               <div className="py-6">
-                <button className="w-fit bg-[#72E484] p-2 px-3 font-semibold text-black rounded-full text-sm cursor-pointer">
-                  {t("header.contactUs")}
-                </button>
+                <NavLink target="_blank" to={"https://t.me/q_fourpay"}>
+                  <button className="w-fit bg-[#72E484] p-2 px-3 font-semibold text-black rounded-full text-sm cursor-pointer">
+                    {t("header.contactUs")}
+                  </button>
+                </NavLink>
               </div>
             </div>
           </div>

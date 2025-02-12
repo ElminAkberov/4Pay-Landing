@@ -14,7 +14,7 @@ const ContactUs = () => {
           {t("contactUs.description")}
         </p>
       </div>
-      <div className="max-w-4xl mx-auto mt-5">
+      {/* <div className="max-w-4xl mx-auto mt-5">
         <div className="mb-5">
           <label className="text-[12px]" htmlFor="name">
             {t("contactUs.nameLabel")}
@@ -53,7 +53,7 @@ const ContactUs = () => {
             {t("contactUs.submitButton")}
           </button>
         </div>
-      </div>
+      </div> */}
     </form>
   );
 };
