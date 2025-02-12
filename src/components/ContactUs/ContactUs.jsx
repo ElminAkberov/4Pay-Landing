@@ -6,7 +6,7 @@ const ContactUs = () => {
   const { t } = useTranslation();
 
   return (
-    <form className="text-white mt-24 max-w-6xl mx-auto bg-[#121A1E] min-h-[650px] p-16 rounded-2xl relative max-md:px-2">
+    <div className="text-white mt-24 max-w-6xl mx-auto bg-[#121A1E] min-h-[450px] p-16 rounded-2xl relative max-md:px-2">
       <div className="max-w-3xl mx-auto">
         <h2 className="text-[48px] max-lg:text-[32px] font-bold text-center">
           {t("contactUs.title")}
@@ -15,7 +15,7 @@ const ContactUs = () => {
           {t("contactUs.description")}
         </p>
       </div>
-      <div className="max-w-4xl mx-auto mt-5">
+      <div className="max-w-4xl mx-auto">
         {/* <div className="mb-5">
           <label className="text-[12px]" htmlFor="name">
             {t("contactUs.nameLabel")}
@@ -48,16 +48,13 @@ const ContactUs = () => {
         </div> */}
         <div className="flex justify-center">
           <NavLink target="_blank" to={"https://t.me/q_fourpay"}>
-            <button
-              type="submit"
-              className="w-fit min-w-[300px] max-md:min-w-[150px] bg-[#683DE5] p-4 px-5 font-semibold rounded-full text-[14px] cursor-pointer mt-20"
-            >
+            <button className="w-fit min-w-[300px] max-md:min-w-[150px] bg-[#683DE5] p-4 px-5 font-semibold rounded-full text-[14px] cursor-pointer mt-20">
               {t("contactUs.submitButton")}
             </button>
           </NavLink>
         </div>
       </div>
-    </form>
+    </div>
   );
 };
 
