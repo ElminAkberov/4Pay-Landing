@@ -9,15 +9,19 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-[#121A1E] sticky top-0 z-999 rounded-b-4xl">
+    <header className="bg-[#121A1E]  rounded-b-4xl">
       <nav
         aria-label="Global"
-        className="mx-auto flex max-w-[1400px] items-center justify-between p-6 lg:px-8"
+        className="mx-auto flex max-w-[1400px]  items-center justify-between p-6 lg:px-8"
       >
         <div className="flex lg:flex-1">
           <NavLink href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">{t("header.companyName")}</span>
-            <img alt="Logo" src="/assets/logo/logo.svg" className="h-12 w-auto" />
+            <img
+              alt="Logo"
+              src="/assets/logo/logo.svg"
+              className="h-12 w-auto"
+            />
           </NavLink>
         </div>
         <div className="flex lg:hidden">
@@ -33,18 +37,21 @@ export default function Example() {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12 text-white">
-          <NavLink to={""} className="text-sm/6 tracking-wide !text-white">
+          <a href={"#features"} className="text-sm/6 tracking-wide !text-white">
             {t("header.features")}
-          </NavLink>
-          <NavLink to={""} className="text-sm/6 tracking-wide !text-white">
+          </a>
+          <a
+            href={"#advantages"}
+            className="text-sm/6 tracking-wide !text-white"
+          >
             {t("header.advantages")}
-          </NavLink>
-          <NavLink to={""} className="text-sm/6 tracking-wide !text-white">
+          </a>
+          <a href={"#target"} className="text-sm/6 tracking-wide !text-white">
             {t("header.targetAudience")}
-          </NavLink>
-          <NavLink to={""} className="text-sm/6 tracking-wide !text-white">
+          </a>
+          <a href={"#fag"} className="text-sm/6 tracking-wide !text-white">
             {t("header.faq")}
-          </NavLink>
+          </a>
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <button className="w-fit bg-[#72E484] p-2 px-3 font-semibold rounded-full text-sm cursor-pointer">
@@ -53,13 +60,21 @@ export default function Example() {
         </div>
       </nav>
 
-      <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
+      <Dialog
+        open={mobileMenuOpen}
+        onClose={setMobileMenuOpen}
+        className="lg:hidden"
+      >
         <div className="fixed inset-0 z-10" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-[#121A1E] text-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#121A1E] text-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <NavLink to={""} className="-m-1.5 p-1.5">
+            <NavLink to={"#"} className="-m-1.5 p-1.5">
               <span className="sr-only">{t("header.companyName")}</span>
-              <img alt="Logo" src="/assets/logo/logo.svg" className="h-12 w-auto" />
+              <img
+                alt="Logo"
+                src="/assets/logo/logo.svg"
+                className="h-12 w-auto"
+              />
             </NavLink>
             <button
               type="button"
@@ -73,18 +88,30 @@ export default function Example() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                <NavLink to={""} className="tracking-wide block !text-white">
+                <a
+                  href={"#features"}
+                  className="text-sm/6 tracking-wide block !text-white"
+                >
                   {t("header.features")}
-                </NavLink>
-                <NavLink to={""} className="tracking-wide block !text-white">
+                </a>
+                <a
+                  href={"#advantages"}
+                  className="text-sm/6 tracking-wide block !text-white"
+                >
                   {t("header.advantages")}
-                </NavLink>
-                <NavLink to={""} className="tracking-wide block !text-white">
+                </a>
+                <a
+                  href={"#target"}
+                  className="text-sm/6 tracking-wide block !text-white"
+                >
                   {t("header.targetAudience")}
-                </NavLink>
-                <NavLink to={""} className="tracking-wide block !text-white">
+                </a>
+                <a
+                  href={"#fag"}
+                  className="text-sm/6 tracking-wide block !text-white"
+                >
                   {t("header.faq")}
-                </NavLink>
+                </a>
               </div>
               <div className="py-6">
                 <button className="w-fit bg-[#72E484] p-2 px-3 font-semibold text-black rounded-full text-sm cursor-pointer">

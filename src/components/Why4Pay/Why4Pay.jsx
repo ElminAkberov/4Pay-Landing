@@ -5,7 +5,7 @@ const Why4Pay = () => {
   const { t } = useTranslation();
 
   return (
-    <div>
+    <div id="advantages">
       <div className="mt-52 text-white max-w-6xl mx-auto relative z-40">
         <h2 className="text-[48px] max-lg:text-[32px] font-bold text-center relative z-40">
           {t("why4pay.title")}

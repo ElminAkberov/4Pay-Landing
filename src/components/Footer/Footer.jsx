@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
   const { t, i18n } = useTranslation();
@@ -29,19 +29,19 @@ const Footer = () => {
           <div className="">
             <h3 className="text-white text-[20px]">{t("footer.navigation")}</h3>
             <div className="py-3">
-              <NavLink>{t("footer.features")}</NavLink>
+              <a href="#features">{t("footer.features")}</a>
             </div>
             <div className="py-3">
-              <NavLink>{t("footer.advantages")}</NavLink>
+              <a href="#advantages">{t("footer.advantages")}</a>
             </div>
             <div className="py-3">
-              <NavLink>{t("footer.targetAudience")}</NavLink>
+              <a href="#target">{t("footer.targetAudience")}</a>
             </div>
             <div className="py-3">
-              <NavLink>{t("footer.faq")}</NavLink>
+              <a href="#fag">{t("footer.faq")}</a>
             </div>
             <div className="py-3">
-              <NavLink>{t("footer.contactUs")}</NavLink>
+              <a href="#contactUs">{t("footer.contactUs")}</a>
             </div>
           </div>
           <div className="">
@@ -68,13 +68,41 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex justify-between flex-wrap my-5 gap-6 items-center w-full">
-        <img src="/assets/icons/p1.svg" className="cursor-pointer" alt="Partner 1" />
-        <img src="/assets/icons/p2.svg" className="cursor-pointer" alt="Partner 2" />
-        <img src="/assets/icons/p3.svg" className="cursor-pointer" alt="Partner 3" />
-        <img src="/assets/icons/p4.svg" className="cursor-pointer" alt="Partner 4" />
-        <img src="/assets/icons/p5.svg" className="cursor-pointer" alt="Partner 5" />
-        <img src="/assets/icons/p6.svg" className="cursor-pointer" alt="Partner 6" />
-        <img src="/assets/icons/p7.svg" className="cursor-pointer" alt="Partner 7" />
+        <img
+          src="/assets/icons/p1.svg"
+          className="cursor-pointer"
+          alt="Partner 1"
+        />
+        <img
+          src="/assets/icons/p2.svg"
+          className="cursor-pointer"
+          alt="Partner 2"
+        />
+        <img
+          src="/assets/icons/p3.svg"
+          className="cursor-pointer"
+          alt="Partner 3"
+        />
+        <img
+          src="/assets/icons/p4.svg"
+          className="cursor-pointer"
+          alt="Partner 4"
+        />
+        <img
+          src="/assets/icons/p5.svg"
+          className="cursor-pointer"
+          alt="Partner 5"
+        />
+        <img
+          src="/assets/icons/p6.svg"
+          className="cursor-pointer"
+          alt="Partner 6"
+        />
+        <img
+          src="/assets/icons/p7.svg"
+          className="cursor-pointer"
+          alt="Partner 7"
+        />
       </div>
       <p className="text-center">
         {new Date().getFullYear()} {t("footer.allRightsReserved")}

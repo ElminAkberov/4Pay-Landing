@@ -1,6 +1,8 @@
 @import "tailwindcss";
-body{
-    font-family: 'Poppins', sans-serif;
-    background: #1B2332;
-
+body {
+  font-family: "Poppins", sans-serif;
+  background: #1b2332;
+}
+html {
+  scroll-behavior: smooth;
 }
