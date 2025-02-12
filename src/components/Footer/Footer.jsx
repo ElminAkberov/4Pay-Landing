@@ -61,8 +61,8 @@ const Footer = () => {
               id="lang"
               onChange={changeLanguage}
             >
-              <option value="ru">Русский</option>
               <option value="en">English</option>
+              <option value="ru">Русский</option>
             </select>
           </div>
         </div>
