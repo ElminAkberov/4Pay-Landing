@@ -3,7 +3,7 @@ import React from "react";
 const TargetAudience = () => {
   return (
     <div>
-      <div className="max-w-[1400px] mx-auto mt-52 text-white relative bg-[#1A222B] p-16 ">
+      <div className="max-w-[1400px] mx-auto mt-52 text-white relative bg-[#1A222B] p-16 rounded-3xl">
         <div className="lg:flex gap-10">
           <div className="lg:w-1/2 lg:mx-auto max-lg:flex flex-col items-center justify-center max-lg:text-center">
             <h3 className="text-[32px] font-semibold">Кому подойдет 4Pay?</h3>
@@ -12,7 +12,7 @@ const TargetAudience = () => {
               помогая предпринимателям быстро и безопасно принимать платежи и
               выводить средства..
             </p>
-            <button className="w-fit  mt-4 min-w-[300px] bg-[#72E484] p-4 px-5 font-semibold text-black rounded-full text-[14px] cursor-pointer">
+            <button className="w-fit  mt-4 min-w-[300px] max-md:min-w-[150px] bg-[#72E484] p-4 px-5 font-semibold text-black rounded-full text-[14px] cursor-pointer">
               Связаться с нами
             </button>
           </div>

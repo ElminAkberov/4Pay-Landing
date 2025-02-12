@@ -3,11 +3,11 @@ import React from "react";
 const Why4Pay = () => {
   return (
     <div>
-      <div className="mt-52 text-white max-w-6xl mx-auto relative ">
-        <h2 className="text-[48px] max-lg:text-[32px] font-bold  text-center">
+      <div className="mt-52 text-white max-w-6xl mx-auto relative z-40">
+        <h2 className="text-[48px] max-lg:text-[32px] font-bold  text-center relative z-40">
           Почему выбирают 4Pay?
         </h2>
-        <p className="text-[#BFC0C9] max-md:text-[14px] text-center">
+        <p className="text-[#BFC0C9] max-md:text-[14px] text-center relative z-40">
           Мы поддерживаем все популярные способы оплаты, обеспечиваем быстрые
           транзакции <br /> и гарантируем высокий уровень безопасности.
         </p>
