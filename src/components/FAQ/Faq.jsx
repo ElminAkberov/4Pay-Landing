@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { FaChevronDown } from "react-icons/fa";
 
 const Faq = () => {
@@ -6,43 +7,24 @@ const Faq = () => {
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
-  const faqs = [
-    {
-      title: "Как подключить 4Pay для моего бизнеса?",
-      answer:
-        "Подключение займет всего 1 день. Оставьте заявку, пройдите простую регистрацию, выберите нужные платежные методы и получите доступ к личному кабинету.",
-    },
-    {
-      title: "Какие способы оплаты поддерживает 4Pay?",
-      answer:
-        "Подключение займет всего 1 день. Оставьте заявку, пройдите простую регистрацию, выберите нужные платежные методы и получите доступ к личному кабинету.",
-    },
-    {
-      title: "Как быстро зачисляются платежи?",
-      answer:
-        "Подключение займет всего 1 день. Оставьте заявку, пройдите простую регистрацию, выберите нужные платежные методы и получите доступ к личному кабинету.",
-    },
-    {
-      title: "Какие комиссии у 4Pay?",
-      answer:
-        "Подключение займет всего 1 день. Оставьте заявку, пройдите простую регистрацию, выберите нужные платежные методы и получите доступ к личному кабинету.",
-    },
-  ];
+
+  const { t } = useTranslation();
+
+  const faqs = t("faq.questions", { returnObjects: true });
+
   return (
     <div>
       <div className="text-white mt-24 max-w-4xl mx-auto px-3">
         <div>
-          <h2 className="text-[48px] max-lg:text-[32px] font-bold  text-center">
-            FAQ
+          <h2 className="text-[48px] max-lg:text-[32px] font-bold text-center">
+            {t("faq.title")}
           </h2>
           <p className="text-[#BFC0C9] max-md:text-[14px] text-center">
-            Здесь мы собрали ответы на самые популярные вопросы о 4Pay. Если у
-            вас остались <br /> вопросы, свяжитесь с нашей поддержкой — мы
-            всегда готовы помочь!
+            {t("faq.description")}
           </p>
         </div>
         <div className="mt-10 relative">
-          <ul className="">
+          <ul>
             {faqs.map((faq, index) => (
               <li key={index} className="border-b border-b-[#0E84214D] py-3">
                 <div

@@ -4,7 +4,7 @@ import App from "./App.jsx";
 import React from "react";
 import { RouterProvider } from "react-router-dom";
 import router from "./routes/AppRoute.jsx";
-
+import "../i18n.js";
 createRoot(document.getElementById("root")).render(
   <RouterProvider router={router}>
     <App />

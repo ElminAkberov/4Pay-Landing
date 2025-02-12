@@ -1,0 +1,94 @@
+{
+  "payment_system": "Payment system for all business segments",
+  "fast": "Fast",
+  "payment_processing": "payment processing for your business",
+  "payment_methods": "All popular payment methods for your business. Quick setup and",
+  "secure_payments": "secure payments worldwide.",
+  "contact_us": "Contact us",
+  "wide_payment_methods": "Wide selection of payment methods",
+  "payment_methods_description": "We offer convenient and reliable payment acceptance and withdrawal methods so that your business can operate without borders. Choose the suitable method and get paid quickly and safely.",
+  "p2p": "P2P",
+  "p2p_description": "Make instant transfers to other people using Visa, MasterCard, and Mir bank cards.",
+  "ecom": "eCom",
+  "ecom_description": "Accept payments from your customers using Visa, MasterCard, and Mir bank cards.",
+  "sberbank": "Sberbank",
+  "sberbank_description": "Accept payments from your customers using Sberbank's QR code.",
+  "spb": "SPB",
+  "spb_description": "Withdraw funds instantly to your card, bank account, or e-wallet.",
+  "why4pay": {
+    "title": "Why Choose 4Pay?",
+    "subtitle": "We support all popular payment methods, provide fast transactions, and guarantee a high level of security.",
+    "quickStart": "Quick Start",
+    "quickStartDescription": "Start accepting payments in just 1 day with no complex integrations.",
+    "simpleIntegration": "Simple Integration",
+    "simpleIntegrationDescription": "Our API allows easy payment integration into your website, marketplace, or mobile app.",
+    "secureWithdrawals": "Secure Withdrawals",
+    "secureWithdrawalsDescription": "Withdraw funds instantly to your card, bank account, or e-wallet."
+  },
+
+  "targetAudience": {
+    "title": "Who is 4Pay for?",
+    "description": "Our payment aggregator is designed for different business segments, helping entrepreneurs accept payments and withdraw funds quickly and securely.",
+    "contactUs": "Contact Us",
+    "audiences": {
+      "ecommerce": "E-commerce and Marketplaces",
+      "freelancers": "Freelancers and SaaS",
+      "subscriptions": "Subscription Services",
+      "onlinePlatforms": "Online Services and Platforms"
+    }
+  },
+  "faq": {
+    "title": "FAQ",
+    "description": "Here we have collected answers to the most popular questions about 4Pay. If you still have questions, contact our support team—we are always ready to help!",
+    "questions": [
+      {
+        "title": "How to connect 4Pay for my business?",
+        "answer": "The connection will take only 1 day. Submit an application, complete a simple registration, choose the necessary payment methods, and get access to your personal account."
+      },
+      {
+        "title": "What payment methods does 4Pay support?",
+        "answer": "The connection will take only 1 day. Submit an application, complete a simple registration, choose the necessary payment methods, and get access to your personal account."
+      },
+      {
+        "title": "How quickly are payments credited?",
+        "answer": "The connection will take only 1 day. Submit an application, complete a simple registration, choose the necessary payment methods, and get access to your personal account."
+      },
+      {
+        "title": "What are the fees for 4Pay?",
+        "answer": "The connection will take only 1 day. Submit an application, complete a simple registration, choose the necessary payment methods, and get access to your personal account."
+      }
+    ]
+  },
+  "contactUs": {
+    "title": "Contact Us",
+    "description": "We offer convenient and reliable payment acceptance and withdrawal methods so that your business can operate without borders. Choose the suitable method and get paid quickly and safely.",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Enter",
+    "phoneLabel": "Phone Number",
+    "phonePlaceholder": "Phone number",
+    "submitButton": "Contact Us"
+  },
+  "footer": {
+    "description": "Start accepting payments and sending withdrawals with 4Pay today!",
+    "navigation": "Navigation",
+    "features": "Features",
+    "advantages": "Advantages",
+    "targetAudience": "Who is it for?",
+    "faq": "FAQ",
+    "contactUs": "Contact Us",
+    "resources": "Resources",
+    "apiDocs": "API Documentation",
+    "terms": "Terms of Use",
+    "requirements": "Requirements",
+    "allRightsReserved": "All rights reserved"
+  },
+  "header": {
+    "companyName": "Your Company",
+    "features": "Features",
+    "advantages": "Advantages",
+    "targetAudience": "Who is it for?",
+    "faq": "FAQ",
+    "contactUs": "Contact Us",
+    "closeMenu": "Close Menu"
+  }
+}
