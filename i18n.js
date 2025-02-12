@@ -13,7 +13,7 @@ i18n
     debug: false,
     detection: {
       order: ["querystring", "cookie", "localStorage", "navigator"],
-      caches: ["cookie"],
+      caches: ["localStorage", "cookie"],
     },
     backend: {
       loadPath: "/locales/{{lng}}/translation.json",

@@ -59,6 +59,7 @@ const Footer = () => {
               className="bg-[#0B1113] w-[250px] max-md:w-[150px] p-3 rounded-xl outline-none"
               name="lang"
               id="lang"
+              defaultValue={localStorage.getItem("i18nextLng")}
               onChange={changeLanguage}
             >
               <option value="en">English</option>
