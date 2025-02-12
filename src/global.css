@@ -6,3 +6,14 @@ body {
 html {
   scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #121a1e;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #616161;
+}
